@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f2eae2;
+    color: #6c7289;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.main-div {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-img {
+    width: 100%;
+    display: block;
+}
+
+.description-div {
+    padding: 32px 32px 0 31.5px;
+    text-align: left;
+}
+
+.perfume-txt {
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Fraunces;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #1c232b;
+}
+
+.description-txt {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 500;
+    margin-bottom: 29px;
+}
+
+.price-div {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 30px;
+}
+
+.discounted-price {
+    font-family: Fraunces;
+    font-size: 32px;
+    color: #3d8168;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+    border-radius: 8px;
+    background-color: #3d8168;
+    border: none;
+}
+
+.cart{
+    width: 14.4px;
+    height: 16px;
+    margin-right: 11.6px;
+}
+
+.btn-txt{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #1a4032;
+}
+
+@media(max-width: 768px) {
+
+    .main-div {
+        width: 342.8px;
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #ffffff;
+    }
+
+    .main-img{
+        display: none;
+    }
+
+    .mobile-img{
+        width: 100%;
+        display: block;
+    }
+
+    .price-div {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        margin-bottom: 24px;
+    }
+}
